@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">MeuListView</string>
+    <string name="action_settings">Settings</string>
+    <string name="txtPesq">Pesquisar...</string>
+    <string name="title_activity_configurar">Techcore Soluções em Gestão</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_filial">Código da Empresa</string>
+    <string name="prompt_email">Código do Terminal</string>
+    <string name="prompt_token">Informe o token de acesso</string>
+    <string name="prompt_urlservidor">Endereço do servidor</string>
+    <string name="action_sign_in">Configurar Terminal</string>
+    <string name="action_sign_in_short">Configurar</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+    <string name="texto_jan_config_terminal">Informe os dados abaixo para configuração inicial da aplicação.</string>
+    <string name="title_activity_login_config">Autenticar</string>
+    <string name="btnProdutos">Produtos</string>
+    <string name="btnCheckout">Checkout</string>
+    <string name="btnNovo">Novo</string>
+    <string name="btnSair">Sair</string>
+    <string name="btnSairConfig">Cancelar</string>
+    <string name="txtTotalComDesconto">Total com desconto:</string>
+    <string name="hintDesconto">Desconto R$</string>
+    <string name="txtDescPer">Desconto %</string>
+    <string name="txtAplicar">Aplicar</string>
+    <string name="txtCancelar">Cancelar</string>
+    <string name="ItensCarrinho">Itens:</string>
+    <string name="txtSubTotal">SubTotal:</string>
+    <string name="btnFinalizar">Finalizar</string>
+    <string name="btnDesconto">Desconto</string>
+    <string name="title_activity_main">activity_main</string>
+    <string name="txtEndServidor">Servidor:</string>
+    <string name="title_activity_pedidos">activity_pedidos</string>
+    <string name="txtTotal">Total:</string>
+    <string name="edt_server_rest_porta">Porta</string>
+    <string name="title_activity_listar_vendas_view">listar_vendas_view</string>
+</resources>

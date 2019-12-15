@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C2C2C2"
+    android:orientation="horizontal">
+
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="155dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="1dp"
+        android:background="#FFF"
+        android:padding="2sp"
+        android:text="Valor Efetivado:"
+        android:textColor="#000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtLstVendasValor2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <TextView
+        android:id="@+id/txtLstVendasValor2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="2dp"
+        android:background="#FFF"
+        android:padding="2sp"
+        android:text="R$ 0,00"
+        android:textAlignment="textEnd"
+        android:textColor="#000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView22"
+        app:layout_constraintTop_toBottomOf="@+id/txtLstVendasValor" />
+
+    <TextView
+        android:id="@+id/txtVendasTitulo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="2dp"
+        android:background="#FFFFFF"
+        android:fontFamily="sans-serif"
+        android:padding="2sp"
+        android:text="CÓDIGO: 000000 / DATA: 00/00/0000"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.SearchResult.Title"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_absoluteHeight="24dp"
+        tools:layout_conversion_absoluteWidth="145dp"
+        tools:layout_conversion_wrapHeight="735"
+        tools:layout_conversion_wrapWidth="0" />
+
+    <TextView
+        android:id="@+id/txtLstVendasStatus"
+        android:layout_width="155dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="1dp"
+        android:background="#fff"
+        android:padding="2sp"
+        android:text="Status: "
+        android:textColor="#000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVendasTitulo" />
+
+    <TextView
+        android:id="@+id/txtLstVendasSts"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="2dp"
+        android:background="#FFF"
+        android:padding="2sp"
+        android:text="Pendente"
+        android:textColor="#2E7D32"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtLstVendasStatus"
+        app:layout_constraintTop_toBottomOf="@+id/txtVendasTitulo" />
+
+    <TextView
+        android:id="@+id/txtLstVendasValor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="2dp"
+        android:background="#FFF"
+        android:padding="2sp"
+        android:text="R$ 0,00"
+        android:textAlignment="textEnd"
+        android:textColor="#CC0000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView21"
+        app:layout_constraintTop_toBottomOf="@+id/txtLstVendasSts" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="155dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="1dp"
+        android:background="#FFF"
+        android:padding="2sp"
+        android:text="Valor da Venda:"
+        android:textColor="#000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLstVendasStatus" />
+
+</android.support.constraint.ConstraintLayout>

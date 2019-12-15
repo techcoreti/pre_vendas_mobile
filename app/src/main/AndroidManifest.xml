@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.techcore.appprevendastechcore">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="TechCore-PDV"
+        android:roundIcon="@mipmap/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".Vendedores.LoginDataVendas"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="TechCore-PDV (Mobile)">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Produtos.DadosProduto"
+            android:windowSoftInputMode="stateVisible"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Configurar.Config"
+            android:label="@string/title_activity_configurar"
+            android:theme="@style/AppTheme"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Carrinho.Carrinho"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Carrinho.Car_Produtos"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Carrinho.Car_Desconto"
+            android:windowSoftInputMode="stateVisible"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Carrinho.Car_Fechamento"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Vendedores.Activity_Vendedores"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Vendedores.Lista_Vendedores"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Produtos.AListarProduto"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Listar_Vendas.lstViewVendas"
+            tools:ignore="InnerclassSeparator" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

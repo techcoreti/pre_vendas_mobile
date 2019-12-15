@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.techcore.appprevendastechcore.MainActivity">
+
+    <Button
+        android:id="@+id/btnMsinListarVendas"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="30dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:elevation="3dp"
+        android:enabled="false"
+        android:text="@string/btnNovo"
+        android:textColor="@android:color/background_light"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/btnMainSair"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMainNovo" />
+
+    <Button
+        android:id="@+id/btnMainLstVendas"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="2dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:elevation="3dp"
+        android:text="Listar Vendas"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnMainNovo"
+        app:layout_constraintTop_toBottomOf="@+id/btnMainCheckout" />
+
+    <TextView
+        android:id="@+id/dspServidor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="@font/arsenal"
+        android:text="Servidor: 000.000.000.000"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnMainCheckout"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="2dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:backgroundTint="?android:attr/colorEdgeEffect"
+        android:text="@string/btnCheckout"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnMainProdutos"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnMainNovo"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="30dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:elevation="3dp"
+        android:text="@string/btnNovo"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toStartOf="@+id/btnMainLstVendas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMainProdutos" />
+
+    <Button
+        android:id="@+id/btnMainProdutos"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="60dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:elevation="3dp"
+        android:text="@string/btnProdutos"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toStartOf="@+id/btnMainCheckout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnMainSair"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="2dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="@string/btnSair"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnMsinListarVendas"
+        app:layout_constraintTop_toBottomOf="@+id/btnMainLstVendas" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@android:drawable/ic_menu_manage"
+        android:tint="@color/cardview_light_background"
+        android:visibility="visible"
+        app:backgroundTint="@color/colorPrimaryDark"
+        app:elevation="3dp"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
