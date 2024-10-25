@@ -16,6 +16,7 @@
         <activity android:name=".Vendedores.LoginDataVendas"></activity>
         <activity
             android:name=".MainActivity"
+            android:exported="true"
             android:label="TechCore-PDV (Mobile)">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
